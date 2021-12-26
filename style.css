@@ -180,13 +180,14 @@ input[type=checkbox]{ display: none; }
 
 .nav_title {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.2rem;
 }
 
 .footer ul {
   list-style: none;
   padding-left: 0;
   margin-bottom: 1rem;
+  padding-right: 2rem;
 }
 
 .footer li {
@@ -209,7 +210,7 @@ input[type=checkbox]{ display: none; }
 
 .nav_ul a {
   color: #999;
-  cursor: default;
+  cursor: pointer;
 }
 .nav_ul a:hover {
   color: #C6C6C6;

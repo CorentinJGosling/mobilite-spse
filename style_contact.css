@@ -71,7 +71,29 @@
      color: #fff;
      text-align: center;
      margin-bottom: 1rem;
+     overflow: hidden;
    }
+
+   .card_row_title > span{
+    position: relative;
+    display: inline-block;
+    }
+  .card_row_title > span:before, .card_row_title > span:after{
+      content: '';
+      position: absolute;
+      top: 50%;
+      border-bottom: 2px solid;
+      width: 15vw; /* half of limiter*/
+      margin: 0 20px;
+      padding-right: 100px;
+
+  }
+  .card_row_title > span:before{
+      right: 100%;
+  }
+  .card_row_title > span:after{
+      left: 100%;
+  }
 
    .content .row_card{
      display:flex; 

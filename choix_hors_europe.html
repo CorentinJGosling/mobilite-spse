@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_choix_europe.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>Départ hors Europe</title>
+ </head>
+
+ <body>
+
+  <!--------------------------------------------------- navigation -------------------------------------------------------------->
+  <nav class="navbar">
+
+    <!-- logo UPN -->
+    <div class="logo"><img src = "image.png" class = "img_logo"></div>
+    
+    <!-- menu -->
+    <ul class="nav-links">
+    
+      <!-- hamburger -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+      <!-- navbar -->
+      <div class="menu">
+        <li><a href="index.html" class = "non_active">Accueil</a></li>
+        <li><a href="choix_orient.html" class = "non_active" >Partir en mobilité</a></li>
+        <li><a href="retour.html" class = "non_active">Revenir de mobilité</a></li>
+        <!-- <li><a href="/" class = "non_active">Venir étudier à l'UPN</a></li> -->
+        <li><a href="FAQ.html" class = "non_active">FAQ</a></li>
+        <li><a href="contact.html" class = "non_active">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+    <!------------------------------------------------------------- CONTENT ------------------------------------------------------->
+
+  <div class="content">
+
+    <div class = "highlight">
+      <h1>Partie hors d'Europe</h1>
+    </div>
+
+    <div class = "text">
+      <div class="toc">
+        <h2>Liste des étapes à réaliser</h2>
+        <ul class="toc_list">
+          <li><a href="#Introduction">Introduction</a></li>
+          <li><a href="#Etape1">Etape 1 : Choisir sa destination</a></li>
+          <li><a href="#Etape2">Etape 2 : Choisir ses cours</a></li>
+          <li><a href="#Etape3">Etape 3 : Formulaire de candidature</a></li>
+          <li><a href="#Etape4">Etape 4 : Faire une demande de bourse</a></li>
+          <li><a href="#Etape5">Etape 5 : Gérer les problèmes de calendrier</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class = "text">
+      <h2 id = "Introduction">Introduction.</h2>
+      <p>Avant de décrire précisément les différentes étapes pour préparer votre mobilité, voici quelques informations générales :</p>
+      <ul class = "list_text">
+        <li>Vous pouvez télécharger les différents documents (projet d'étude, contrat d'étude, formulaire MoveOn, dossier MICEFA, etc...) dans la section "Documents utiles" (à droite de la page) <a target = "_blank" href = "https://www.parisnanterre.fr/etudiant-de-paris-nanterre-partir-a-linternational/partir-en-echange-universitaire/sejours-detudes-hors-europe" style = "font-weight: bold; color: red;">ici</a>.
+        </li>
+        <li>Vous pouvez formuler jusqu'à 5 voeux lors d'une demande de mobilité hors d'Europe selon la combinaison choisie :<br>
+          - Combinaison A : 3 choix bilatéraux<br>
+          - Combinaison B : 1 choix MICEFA et 2 choix bilatéraux<br>
+          - Combinaison C : 3 choix BCI et 2 choix bilatéraux
+        </li>
+        <li>Vous ne pouvez pas partir en L2. Les départs ne sont ouverts qu'aux étudiants de L2 au doctorat. A noter que pour partir lors de votre L2, votre candidature doit être déposée dès votre L1 !
+        </li>
+        <li>Vous ne pouvez partir qu'une fois par cycle universitaire (i.e., une fois en licence, une fois en master et une fois en doctorat).</li>
+        <li>Vous ne pouvez pas formuler à la fois une demande de mobilité en Europe et une demande de mobilité hors de l'Europe.
+        </li>
+        <li>Vous devez vous inscrire ADMINISTRATIVEMENT à Paris Nanterre lors de l'année où vous partez en mobilité.
+        </li>
+        <li>Les stages et les mémoires de recherche <b>de master</b> sont les seuls cours de Paris Nanterre qui ne peuvent pas être validés par équivalence avec des cours de l'université d'accueil. 
+          Ceci implique que TOUS les autres cours, notamment les TP bio de L3, le TER de L3, etc... sont validés par équivalence lors d'une mobilité.
+        </li>
+        <li>Beaucoup de vos questions ont leur réponse sur ce site ou sur le site du
+          service des relations internationales (<a target = "_blank" href = "https://www.parisnanterre.fr/etudiant-de-paris-nanterre-partir-a-linternational/partir-en-echange-universitaire" style = "font-weight: bold; color: red;">SRI</a>).
+          Pensez à prendre le temps de lire l'ensemble des documents fournis avant de commencer à préparer votre départ !
+        </li>
+      </ul>
+
+    </div>
+
+    <div class = "text">
+      <h2 id = "Etape1">Etape 1 : Choisir sa destination.</h2>
+      <p>L'université Paris Nanterre dispose de partenariats Erasmus avec de très nombreuses universités. 
+        La liste complète des universités possibles est disponible sur la carte interactive du Service des Relations Internationales (SRI).
+        Vous pouver accéder à cette carte directement sur le site du SRI <a target = "_blank" href = "https://uparis10.moveonfr.com/publisher/1/fra" style = "font-weight: bold; color: red;">ici</a>, ou en affichant la carte ci-dessous.</p>
+        
+        <div class = "out_row" id = "carte_show" onclick="document.getElementById('carte_show').style.display='none'; document.getElementById('carte_hide').style.display='block'; document.getElementById('carte_interactive').style.display='block'">
+          Afficher la carte interactive&nbsp <i class="fas fa-angle-down"></i>
+        </div>
+        <div class = "out_row" style = "display: none;" id = "carte_hide" onclick="document.getElementById('carte_show').style.display='block'; document.getElementById('carte_hide').style.display='none'; document.getElementById('carte_interactive').style.display='none'">
+          Enlever la carte interactive&nbsp <i class="fas fa-angle-up"></i>
+        </div>   
+        
+        <div class = "carte_interactive" id = "carte_interactive">
+          <iframe id="example1" src="https://uparis10.moveonfr.com/publisher/1/fra" style="border: 2px solid black; width: 100%; height: 100vh" frameborder="0"></iframe>
+        </div>
+        
+        <p> <b>Nous vous donnons quelques recommandations pour guider votre choix d'université.</b></p>
+      <ul class = "list_text">
+        <li><b>Langue :</b> Sélectionnez une université d'un pays dont vous parlez la langue. 
+          Si vous sélectionnez un pays dont vous ne parlez pas la langue, il est très important de vérifier que certains cours sont dispensés dans une langue que vous maîtrisez.<br>
+          Pour connaître les langues dans lesquelles les cours sont dispensés, il vous faut étudier la plaquette de l'université d'accueil. Si vous ne trouvez pas cette information dans la plaquette des cours, 
+          il faut absolument poser cette question au coordinateur pédagogique de l'université dans laquelle vous souhaitez étudier <u>avant votre candidature</u>.
+          Pour toute question relative au niveau de langue, merci de lire attentivement les questions qui s'y rapportent dans la section 
+          <a href = "FAQ.html" style = "font-weight: bold; color: red;">FAQ</a> avant de nous contacter à ce sujet.
+        </li>
+        <li><b>Cours :</b> Sélectionnez une université dont les cours vous intéressent et concernent la psychologie.
+          Nous donnons plus de détails sur la façon de choisir vos cours dans la section 2 ci-dessous mais - avant de choisir précisément vos cours - 
+          pensez à vérifier que l'université que vous choisissez dispense des cours que vous avez envie de suivre et qui ne sont pas trop éloignés des cours que vous pourriez suivre à Paris Nanterre.
+        </li>
+      </ul>
+      <p>Une fois que vous avez sélectionné entre une et trois universités qui ont un partenariat avec Paris Nanterre, qui 
+        dispensent des cours dans une langue que vous maîtrisez et qui concernent la psychologie, vous pouvez passer à l'étape suivante : choisir vos cours !
+      </p>
+    </div>  
+
+    <div class = "text">
+      <h2 id = "Etape2">Etape 2 : Choisir ses cours.</h2>
+      <p>Maintenant que vous avez sélectionné au moins une université, il est dans de passer à l'une des étapes les plus importantes 
+        lors d'une mobilité, à savoir choisir les cours que vous suivrez l'année prochaine.</p>
+      <p>Lors d'une mobilité d'étude, il est important de savoir que les notes que allez obtenir dans l'université d'accueil (i.e., l'université dans laquelle vous partez)
+        vont être converties selon le système Français (note sur 20 avec une moyenne de 10) lors de votre retour. Ces notes converties seront insérées dans votre dossier <u>en lieu et place des notes que vous auriez pu obtenir si vous étiez resté à Paris Nanterre.</u></p>
+      <p>Il y a donc deux étapes concernant le choix des cours qui sont très importantes:</p>
+      <ol class = "list_text">
+        <li>choisir les cours de l'université Paris Nanterre que vous auriez pris si vous étiez resté à Paris Nanterre. Les cours choisis sont ceux qui apparaîtront sur votre dossier.</li>
+        <li>choisir les cours de l'université d'accueil auxquels vous allez assister lors de votre mobilité. Les notes que vous obtiendrez
+          à ces cours seront converties puis insérées dans votre dossier comme notes aux cours choisis à Paris Nanterre.</li>
+      </ol>
+      <br>
+      <p><b>1. Choix des cours à Paris Nanterre.</b></p>
+      <p>Tout se passe comme d'habitude : vous choisissez les cours que vous souhaitez suivre, les options qui vous intéressent le plus, etc... 
+        La seule différence est que vous n'avez pas besoin de procéder aux inscriptions pédagogiques.
+        Dès que vous avez choisi les cours que vous auriez voulu suivre si vous étiez resté à Paris Nanterre, envoyez la liste à M. Samuel Laroque et il fera votre inscription pédagogique directement.
+      </p>
+      <br>
+      <p><b>2. Choix des cours à l'université d'accueil.</b></p>
+      <p>Le choix des cours à l'université d'accueil doit se faire en fonction des cours que vous avez choisi à Paris Nanterre et de vos intérêts personnels.<br>
+        L'objectif principal est d'essayer - dans la mesure du possible - de sélectionner des cours qui sont proches de ceux que vous auriez pu suivre à Paris Nanterre :
+        évidemment, ce n'est pas toujours possible (par exemple, car certaines universités n'offrent pas d'équivalent à des EC de Paris Nanterre).
+        Dans ces situations, sélectionnez des cours qui correspondent à votre projet professionnel et qui concernent la psychologie ou une discipline très proche (neurosciences, pharmacologie, sciences de l'éducation, etc...).
+      </p>
+      <p><u>Voici quelques règles que vous devez absolument connaître avant de choisir les cours que vous allez suivre à l'université d'accueil.</u></p>
+      <ul class = "list_text">
+        <li><b>Nombre d'ECTS :</b> vous devez choisir un nombre de cours de sorte à ce que le nombre d'ECTS validé par ces cours soit environ 30. Nous acceptons une tolérance de 3 ECTS : vous pouvez valider 27 ECTS au minimum et 33 ECTS au maximum. 
+          Vous ne pouvez pas sélectionner un nombre de cours vous donnant moins de 27 ECTS (votre année ne serait pas validée à votre retour) ou plus de 33 ECTS (vous auriez une charge de travail beaucoup
+      trop importante, le nombre d'ECTS validé par un enseignement étant en lien avec la quantité de travail à fournir pour le valider).
+        </li>
+        <li><b>Stages :</b> les stages ne peuvent pas être validés par équivalence avec un cours de l'université d'accueil. Ceci implique que si la plaquette de Paris Nanterre comprend un stage obligatoire,
+        par exemple au <b style = "color: red">S6 (second semestre de L3)</b>, en M1 ou en M2, vous devez absolument réaliser un stage sur la période de votre mobilité.<br>
+      Pour le stage de L3, prenez contact avec le responsable des stages du bloc que vous avez choisi pour discuter des modalités envisageables (par exemple, 
+      réaliser un stage en France avant de partir, réaliser un stage juste après votre retour en France, réaliser un stage dans le pays de votre mobilité avec un suivi à distance, etc...).
+        </li>
+        <li>
+          <b>Master :</b> si vous souhaitez partir en M1 ou M2, prenez contact avec l'équipe pédagogique de votre master pour qu'ils valident vos choix de cours.
+          Il est important de noter qu'une mobilité en M1 ou M2 implique quasi-systématiquement un redoublement.
+        </li>
+      </ul>
+    </div>  
+
+    <div class = "text">
+      <h2 id = "Etape3">Etape 3 : Formulaire de candidature.</h2>
+      <p> Une fois que vous avez (i) sélectionné les universités dans lesquelles vous souhaiteriez partir et (ii) identifié les cours que vous aimeriez suivre dans ces universités (pour un total de 30 ECTS), 
+        vous pouvez commencer à faire votre dossier de candidature.</p>
+      <p>Il est important de savoir que la partie administrative d'une candidature à une mobilité d'étude est gérée entièrement par le Service des Relations Internationales (SRI).
+        Vous pouvez retrouver toutes les pièces devant être jointes à votre dossier sur le <a target = "_blank" href = "https://www.parisnanterre.fr/etudiant-de-paris-nanterre-partir-a-linternational/partir-en-echange-universitaire/sejours-detudes-hors-europe" style = "font-weight: bold; color: red;">site du SRI</a>. 
+      Si vous avez des questions sur la constitution de votre dossier, les personnes à contacter en priorité sont les membres du SRI (vous pouvez retrouver les informations pour les contacter dans l'onglet <a href = "contact.html" style = "font-weight: bold; color: red;">Contact</a> de ce site). </p>
+    </div>  
+
+    <div class = "text">
+      <h2 id = "Etape4">Etape 4 : Faire une demande de bourse.</h2>
+      <p>Si votre demande de mobilité est acceptée, vous serez contacté par le service des relations internationales pour faire une demande d'aide à la mobilité. 
+        En attendant, vous pouvez retrouver plus de renseignements sur les différentes aides possibles <a target = "_blank" href = "https://www.parisnanterre.fr/etudiant-de-paris-nanterre-partir-a-linternational/aides-a-la-mobilite-etudes" style = "font-weight: bold; color: red;">ici</a>.
+      </p>
+    </div>  
+
+    <div class = "text">
+      <h2 id = "Etape5">Etape 5 : Gérer les problèmes de calendrier.</h2>
+      <p>
+        Il est très fréquent que les calendriers de l'université d'acceuil et de l'université Paris Nanterre ne coïncident pas parfaitement. 
+        Par exemple, certaines universités étrangères terminent le premier semestre au début du mois de Février tandis que d'autres commenencent leur second semestre au tout début du mois de Janvier. </p>
+       <p>Voici les situations les plus fréquemment rencontrées et les solutions pour les résoudre : </p> 
+       <ul class = "list_text">
+        <li><b>Vous partez lors du premier semestre et votre retour se fait après le début des cours du second semestre</b><br>
+          Prenez contact avec le service des relations internationales et décrivez leur votre souci. 
+          Vous allez recevoir un document vous permettant de justifier de façon officielle que vous ne pourrez pas assister aux premiers enseignements du second semestre à cause de votre mobilité.
+          Pré-remplissez ce document, demandez un justificatif signé par votre université d'accueil explicitant la date de fin de votre mobilité 
+          puis transmettez le document pré-rempli et le justificatif à votre coordinateur pédagogique de l'université Paris Nanterre (M. Gosling ou M. Zerhouni).<br>
+          Une fois ce document reçu, vos absences aux premiers enseignements ne seront pas comptabilisées.
+        </li>
+        <li><b>Vous partez lors du second semestre et votre départ doit se faire avant les examens terminaux de Paris Nanterre du premier semestre</b><br>
+          Prenez contact avec l'université d'accueil et explicitez votre situation. 
+          La quasi-totalité des universités d'accueil acceptent que votre arrivée se fasse après le début des enseignements. Vous aurez généralement des solutions qui vous seront proposées pour rattraper votre retard.<br>
+          Si l'université d'accueil refuse que votre arrivée se fasse après le début des enseignements (et donc avant que les examens terminaux de Paris Nanterre aient lieu), prenez contact avec votre coordinateur pédagogique de l'université Paris Nanterre (M. Gosling ou M. Zerhouni) en explicitant votre situation 
+          <u>et en transmettant les documents (ou les mails) de l'université d'accueil démontrant qu'ils refusent que votre arrivée se fasse après le début des enseignements.</u>
+
+        </li>
+
+      </p>
+
+    </div>  
+
+
+  </div>
+
+    <!-- ---------------- FOOTER ------------------>
+
+  <footer class="footer">
+    <div class="footer_addr">
+      <h4 class="footer_logo">Relations internationales</h4>
+
+      <address>
+        Université Paris Nanterre<br>
+        200 avenue de la république<br>
+        92000 Nanterre, France<br>
+        <button type = "button" style = "border:solid 1px #000"><a href="contact.html" style = "text-decoration:none; color: #000; width: 100%; height: 100%; display:block;">Contactez nous</a></button>
+      </address>
+    </div>
+
+    <ul class="footer_nav">
+      <li class="nav__item">
+        <h2 class="nav_title">Aspects administratifs</h2>
+        <ul class="nav_ul">
+          <li><a href="#">Nadia Tahri</a></li>
+          <li><a href="#">Shuyan Han-Benoit</a></li>
+          <li><a href="#">Valentin Zero</a></li>
+          <li><a href="#">Samia Belbouab</a></li>
+        </ul>
+      </li>
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav_title">Aspects pédagogiques</h2>
+        <ul class="nav_ul nav_ul--extra">
+          <li><a href="#">Corentin Gosling</a></li>
+          <li><a href="#">Oulmann Zerhouni</a></li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav_title">Inscriptions pédagogiques</h2>
+        <ul class="nav_ul">
+          <li><a href="#">Samuel Laroque</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </footer>
+
+
+
+ </body>
+</html>

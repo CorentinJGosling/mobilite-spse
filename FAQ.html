@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style_FAQ.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>FAQ</title>
+ </head>
+
+ <body>
+
+  <!--------------------------------------------------- navigation -------------------------------------------------------------->
+  <nav class="navbar">
+
+    <!-- logo UPN -->
+    <div class="logo"><img src = "image.png" class = "img_logo"></div>
+    
+    <!-- menu -->
+    <ul class="nav-links">
+    
+      <!-- hamburger -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+    
+      <!-- navbar -->
+      <div class="menu">
+        <li><a href="index.html" class = "non_active">Accueil</a></li>
+        <li><a href="choix_orient.html" class = "non_active" >Partir en mobilité</a></li>
+        <li><a href="retour.html" class = "non_active">Revenir de mobilité</a></li>
+        <!-- <li><a href="/" class = "non_active">Venir étudier à l'UPN</a></li> -->
+        <li><a href="FAQ.html" class = "active">FAQ</a></li>
+        <li><a href="contact.html" class = "non_active">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+    <!------------------------------------------------------------- CONTENT ------------------------------------------------------->
+
+  <div class="content">
+    
+    <div class = "highlight">
+      <h1>Foire Aux Questions</h1>
+    </div>
+
+
+    <!-- <div class = "text">
+      <div class="toc">
+        <h2>Principales questions</h2>
+        <ul class="toc_list">
+          <li><a href="#Introduction">Introduction</a></li>
+          <li><a href="#Question1">Question 1 : Partir en master</a></li>
+          <li><a href="#Question2">Question 2 : Contrat d'étude / Learning agreement</a></li>
+          <li><a href="#Question3">Question 3 : Stages de L3</a></li>
+          <li><a href="#Question4">Question 4 : Lettre de motivation / recommandation</a></li>
+          <li><a href="#Question5">Autres questions</a></li>
+        </ul>
+      </div>
+    </div> -->
+
+    <div class = "text_intro">
+      <h2 id = "Introduction">Introduction.</h2>
+      <p>Cette foire aux question (FAQ) est majoritairement centrée sur les aspects pédagogiques. En complément de cette FAQ, nous vous invitons à aller consulter celle du service des relations internationales (SRI),
+        qui est majoritairement dédiée aux aspects administratifs <a target = "_blank" href = "https://www.parisnanterre.fr/actualites-international/faq-mobilites-internationales-2021-2022-1" style = "font-weight: bold; color: red;">SRI</a>
+      </p>
+    </div>  
+
+<!---------------------------------QUESTION 1 ------------------------------------------------------- -->
+    <div class = "out_row" id = "Question1_show" onclick="document.getElementById('Question1_show').style.display='none'; document.getElementById('Question1_hide').style.display='block'; document.getElementById('Q1').style.display='block'">
+      - Année de mobilité&nbsp <i class="fas fa-angle-down"></i>
+    </div>
+    <div class = "out_row" style = "display: none;" id = "Question1_hide" onclick="document.getElementById('Question1_show').style.display='block'; document.getElementById('Question1_hide').style.display='none'; document.getElementById('Q1').style.display='none'">
+      - Année de mobilité&nbsp <i class="fas fa-angle-up"></i>
+    </div>   
+    <div class = "text" id = "Q1">
+      <h3>- Je pars durant le second semestre de L3. Dois-je choisir un bloc de spécialité ?</h3>
+      <div class = "text_question">
+        <p>Tout à fait, le fait que vous partiez en mobilité n'affecte aucunement votre choix de spécialité de L3. 
+          Comme tous les étudiants en L3 de psychologie, vous devez choisir un bloc de spécialité.</p>
+      </div>
+
+      <h3>- Est-il possible de partir pendant son année de master ?</h3>
+      <div class = "text_question">
+        <p>Il est effectivement possible de partir en Master 1 ou en Master 2. 
+        Cependant, avant toute chose, il faut avoir l'accord de l'équipe enseignante du master qui vous concerne. Si vous êtes en L3 et candidatez pour un départ en M1, expliquez bien votre démarche à la personne en charge du M1 auquel vous souhaitez candidater. 
+        Lorsque vous avez l'accord de l'équipe enseignante du master, revenez vers le coordinateur pédagogique de l'université Paris Nanterre (M. Gosling ou M. Zerhouni).</p>
+        <p> A noter que partir en master implique (quasi)systématiquement un redoublement car toutes les UE (notamment le mémoire de recherche et le stage) ne peuvent pas être validées facilement par équivalence.</p>
+      </div>
+    </div>  
+
+    <!-------------------------------------------QUESTION 2 --------------------------------------------------------------->
+    <div class = "out_row" id = "Question2_show" onclick="document.getElementById('Question2_show').style.display='none'; document.getElementById('Question2_hide').style.display='block'; document.getElementById('Q2').style.display='block'">
+      - Contrat d'étude / learning agreement&nbsp <i class="fas fa-angle-down"></i>
+    </div>
+    <div class = "out_row" style = "display: none;" id = "Question2_hide" onclick="document.getElementById('Question2_show').style.display='block'; document.getElementById('Question2_hide').style.display='none'; document.getElementById('Q2').style.display='none'">
+      - Contrat d'étude / learning agreement&nbsp <i class="fas fa-angle-up"></i>
+    </div>   
+
+    <div class = "text" id = "Q2">
+      <div class = "text_question">
+        <h3>- Quelle est la différence entre un projet d'étude et un contrat d'étude?</h3>
+        <p>Le projet d'étude est le document où indiquer les cours que vous pensez suivre dans votre université d'accueil <b>lors de la phase de candidature</b>.</p>
+        <p>Le contrat d'étude est le document où indiquer les cours que vous pensez suivre dans votre université d'accueil ET les cours auxquels vous vous inscrivez à l'université Paris Nanterre <b>après que votre candidature a été validée</b>.</p>
+      </div>
+
+      <h3 id = "Question2">- Le Contrat d'étude (Learning Agreement) doit-il être signé par le professeur coordinateur ou par le SRI ?</h3>
+      <div class = "text_question">
+        <p>Le contrat d'étude doit être signé par le coordinateur pédagogique de l'université Paris Nanterre (M. Gosling ou M. Zerhouni) et votre coordinateur pédagogique de l'université d'accueil.</p>
+      </div>
+
+      <h3 id = "Question2">- Dans le contrat d'étude à quoi correspondent les cases  « Sending institution information », « faculty/department », « Sending Responsible Person » et « Sending Administrative Contact Person » ?</h3>
+      <div class = "text_question"><br>
+        <p><u>Sending institution information</u> : Université Paris Nanterre</p>
+        <p><u>Faculty/department</u> : UFR SPSE</p>
+        <p><u>Sending Responsible Person</u> : votre coordinateur pédagogique à l'université Paris Nanterre (M. Gosling ou M. Zerhouni) </p>
+        <p><u>Sending Administrative Contact Person</u> : Mme Nadia Tahri</p>
+      </div>
+
+      <h3 id = "Question2">- Je ne trouve pas les codes ("component code") correspondants aux matières pour les cours de Paris Nanterre</h3>
+      <div class = "text_question">
+        <p>Le site de référence pour trouver le code de chaque enseignement est <a target = "_blank" href = "https://formations.parisnanterre.fr/fr/index.html" style = "font-weight: bold; color: red;">le catalogue de formation</a>. 
+        Si le code n'est pas indiqué sur ce site, c'est que l'UFR ne l'a pas encore saisi et vous devez donc laisser la case vide.
+      </div>
+      
+      <h3 id = "Question2">- Est-il possible d'envoyer le Learning agreement par mail?</h3>
+      <div class = "text_question">
+        <p>Si l'université d'accueil n'utilise pas la plateforme moveon et le Online Learning Agreement (OLA), il est possible de passer par un document de type pdf.</p>
+      </div>
+
+      <h3 id = "Question2">- Peut-on modifier un projet d'étude après avoir été accepté en échange ou peut-on modifier le
+        contrat pédagogique après l'avoir fait signé ?</h3>
+        <div class = "text_question">
+          <p>Il est tout à fait possible de modifier un projet pédagogique ou un contrat d'étude. C'est d'ailleurs très fréquent car certains cours sélectionnés peuvent disparaitrent d’une année à l’autre, ou finalement ne plus être ouverts aux étudiants en échange. 
+          Pour le projet d'étude, il n'y a rien à faire car ce document n'est pas transmis à l'université d'accueil. 
+          Pour le contrat d'étude, il faut simplement faire un avenant et refaire signer le contrat modifié par les coordinateurs pédagogiques.</p>
+        </div>
+    </div>   
+
+        <!-- ----------------------------------------------------- QUESTION 3 --------------------------------------------------->
+        <div class = "out_row" id = "Question3_show" onclick="document.getElementById('Question3_show').style.display='none'; document.getElementById('Question3_hide').style.display='block'; document.getElementById('Q3').style.display='block'">
+          - Niveau de langue&nbsp <i class="fas fa-angle-down"></i>
+        </div>
+        <div class = "out_row" style = "display: none;" id = "Question3_hide" onclick="document.getElementById('Question3_show').style.display='block'; document.getElementById('Question3_hide').style.display='none'; document.getElementById('Q3').style.display='none'">
+          - Niveau de langue&nbsp <i class="fas fa-angle-up"></i>
+        </div>   
+    
+        <div class = "text" id = "Q3">
+          <h3>- Est-ce qu'un niveau de langue particulier est exigé pour ma destination ?</h3>
+          <div class = "text_question">
+            <p>Quand un test type TOEFL est exigé, c'est en général mentionné dans le descriptif de l'accord sur la carte interactive. Néanmoins, une vérification sur le site du partenaire s'impose. 
+              Il est recommandé de passer les tests de langue AVANT de candidater (c'est un plus dans votre candidature) mais <b>ce n'est pas obligatoire</b>.
+              A noter que chaque établissement a ses pré-requis linguistiques, il n'y a pas de pré-requis communs par pays ou par zone.</p>
+          </div>
+          <h3>- Je souhaite partir dans un pays dont je ne maîtrise pas la langue. Est-ce possible ?</h3>
+          <div class = "text_question">
+            <p>C'est tout à fait possible mais deux conditions doivent être respectées :</p>
+              <ul class = "list_text">
+                <li>- l'université que vous ciblez n'exige pas un niveau de langue minimum que vous ne remplissez pas.</li>
+                <li>- l'université que vous ciblez dispense des cours dans une langue que vous maîtrisez (e.g., en Anglais). </li>
+              </ul>
+
+            <p>Lorsque vous partez dans un pays dont vous ne maîtrisez pas la langue, 
+              nous vous recommandons très fortement de prendre contact avec le coordinateur pédagogique de l'université d'accueil pour avoir une confirmation que votre mobilité est possible et que 30 ECTS peuvent être obtenus en suivant des cours adaptés et dans une langue que vous maitrisez.</p>
+          </div>
+          <h3>- Mon université demande un score au TOEFL supérieur à 80 mais comment puis-je passer le TOEFL ?</h3>
+          <div class = "text_question">
+            <p>Le <a target ="_blank" href = "https://crl.parisnanterre.fr/" style = "font-weight: bold; color: red;">centre de ressources en langue </a>de l'université Paris Nanterre est là pour vous accompagner!  </p>
+          </div>
+
+        </div> 
+
+        
+    <!-- ----------------------------------------------------- QUESTION 3B --------------------------------------------------->
+    <div class = "out_row" id = "Question3b_show" onclick="document.getElementById('Question3b_show').style.display='none'; document.getElementById('Question3b_hide').style.display='block'; document.getElementById('Q3b').style.display='block'">
+      - Stages de L3&nbsp <i class="fas fa-angle-down"></i>
+    </div>
+    <div class = "out_row" style = "display: none;" id = "Question3b_hide" onclick="document.getElementById('Question3b_show').style.display='block'; document.getElementById('Question3b_hide').style.display='none'; document.getElementById('Q3b').style.display='none'">
+      - Stages de L3&nbsp <i class="fas fa-angle-up"></i>
+    </div>   
+
+    <div class = "text" id = "Q3b">
+      <h3>- Je pars durant le second semestre de L3. Que faire pour le stage obligatoire ?</h3>
+      <div class = "text_question">
+          <p>Ce stage ne peut pas être validé par équivalence, vous devez le réaliser pour valider votre année de L3.
+          Dans cette situation, il faut ABSOLUMENT prendre contact avec le responsable des stages du bloc que vous avez choisi.
+          Expliquez votre situation et trouvez un accord sur la façon de réaliser votre stage (réaliser un stage à l'étranger, réaliser votre stage avant ou après votre mobilité, etc...).
+          De manière générale, il est assez difficile de réaliser un stage à l'étranger mais sachez que chaque année, des étudiants font leur stage dans leur pays d'accueil. 
+          Le bureau des stages peut vous aider dans les démarches. <br>
+          N'attendez pas début Janvier pour contacter le responsable des stages de votre bloc !! 
+          </p>
+      </div>
+    </div> 
+
+    <!------------------------------------------------------QUESTION 4 --------------------------------------------------------> 
+    <div class = "out_row" id = "Question4_show" onclick="document.getElementById('Question4_show').style.display='none'; document.getElementById('Question4_hide').style.display='block'; document.getElementById('Q4').style.display='block'">
+      - Lettre de motivation / recommandation&nbsp <i class="fas fa-angle-down"></i>
+    </div>
+    <div class = "out_row" style = "display: none;" id = "Question4_hide" onclick="document.getElementById('Question4_show').style.display='block'; document.getElementById('Question4_hide').style.display='none'; document.getElementById('Q4').style.display='none'">
+      - Lettre de motivation / recommandation&nbsp <i class="fas fa-angle-up"></i>
+    </div>   
+
+    <div class = "text" id = "Q4">
+      <h3>- De quoi parler dans ma lettre de motivation ?</h3>
+      <div class = "text_question">
+        <p>Ne parlez pas de tourisme, d'attraction pour l'artchitecture du pays, etc... 
+           Insistez sur le projet pédagogique et la façon dont il s'articule avec votre projet professionnel. Cela peut être certains cours qui ne sont pas dispensés à Nanterre, une université qui a une très bonne réputation dans une discipline particulière, ou qui est très réputée en recherche si vous vous orientez vers ce type de parcours.</p>
+      </div>
+    </div>  
+      <div class = "text" id = "Q4">
+        <h3 id = "Question4">- Je candidate à une mobilité hors de l'Europe. On me demande 3 lettres de recommandation, doivent-elles obligatoirement être faites par des professeurs de Nanterre ?</h3>
+        <div class = "text_question">
+          <p>Une des lettres doit être écrite par un enseignant de Nanterre (CM ou TD), et les 2 autres sont libres.</p>
+        </div>
+    </div>  
+
+    <!--------------------------------------------      QUESTION 5       ------------------------------------------------------->
+    <div class = "out_row" id = "Question5_show" onclick="document.getElementById('Question5_show').style.display='none'; document.getElementById('Question5_hide').style.display='block'; document.getElementById('Q5').style.display='block'">
+      - Autres questions&nbsp <i class="fas fa-angle-down"></i>
+    </div>
+    <div class = "out_row" style = "display: none;" id = "Question5_hide" onclick="document.getElementById('Question5_show').style.display='block'; document.getElementById('Question5_hide').style.display='none'; document.getElementById('Q5').style.display='none'">
+      - Autres questions&nbsp <i class="fas fa-angle-up"></i>
+    </div>       
+    <div class = "text" id = "Q5">
+      <h3>- Je suis en Licence et je n'ai malheureusement pas validé mon année, ou je suis en Licence 3 et je n'ai pas été sélectionné en Master.
+        Est-ce que cela signifie que mon échange est annulé ?</h3>
+        <div class = "text_question">
+          <p>Malheureusement, oui. </p>
+        </div>
+
+        <h3 id = "Question5">- Je suis en L1 et je n'ai donc pas encore de bulletin de note officiel à transmettre. Que dois-je transmettre comme note ?</h3>
+      <div class = "text_question">
+        <p>Vous pouvez transmettre toutes les notes obtenues avant votre L1 de psychologie (BAC, cursus alternatif, etc ...). </p>
+      </div>
+
+      <h3 id = "Question5">- Pour les départs hors-europe doit-on seulement envoyer le formulaire MoveOn signé par le professeur coordinateur ? 
+        Ou doit-on aussi joindre les fichiers externes qu'on a mis sur MoveOn ? 
+        Je pense notamment aux relevés de notes, les projets d'études, la certification de langue.</h3>
+      <div class = "text_question">
+          <p>Le formulaire MoveOn signé par le professeur coordinateur est suffisant. Si vous faites une demande de mobilité MICEFA, il y a également tous les documents et le formulaire MICEFA à joindre.</p>
+      </div>
+    </div> 
+   </div>
+
+   <br>
+    <!-- ---------------- FOOTER ------------------>
+
+  <footer class="footer">
+    <div class="footer_addr">
+      <h4 class="footer_logo">Relations internationales</h4>
+
+      <address>
+        Université Paris Nanterre<br>
+        200 avenue de la république<br>
+        92000 Nanterre, France<br>
+        <button type = "button" style = "border:solid 1px #000"><a href="contact.html" style = "text-decoration:none; color: #000; width: 100%; height: 100%; display:block;">Contactez nous</a></button>
+      </address>
+    </div>
+
+    <ul class="footer_nav">
+      <li class="nav__item">
+        <h2 class="nav_title">Aspects administratifs</h2>
+        <ul class="nav_ul">
+          <li><a href="#">Nadia Tahri</a></li>
+          <li><a href="#">Shuyan Han-Benoit</a></li>
+          <li><a href="#">Valentin Zero</a></li>
+          <li><a href="#">Samia Belbouab</a></li>
+        </ul>
+      </li>
+
+      <li class="nav__item nav__item--extra">
+        <h2 class="nav_title">Aspects pédagogiques</h2>
+        <ul class="nav_ul nav_ul--extra">
+          <li><a href="#">Corentin Gosling</a></li>
+          <li><a href="#">Oulmann Zerhouni</a></li>
+        </ul>
+      </li>
+
+      <li class="nav__item">
+        <h2 class="nav_title">Inscriptions pédagogiques</h2>
+        <ul class="nav_ul">
+          <li><a href="#">Samuel Laroque</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </li>
+    </ul>
+
+  </footer>
+
+
+  
+ </body>
+</html>

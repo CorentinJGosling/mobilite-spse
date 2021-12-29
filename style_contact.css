@@ -22,6 +22,12 @@
 
  .content{
    margin-top: 5vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-left: 30px;
+   margin-right: 30px;
+ 
   }
 
   .content .highlight h1{
@@ -33,6 +39,11 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     margin-bottom: 4rem;
+   }
+
+   .content .text{
+     max-width: 65rem;
+     width: 100%;
    }
 
    
@@ -61,9 +72,8 @@
     margin-bottom: 4rem;
     background-color: rgba(255,255,255,0.8);
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 24px 10px, rgba(14, 30, 37, 0.7) 0px 2px 56px 25px;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    max-width: 65rem;
     /* text-align: center; */
   }
    .content .card_row_title {
@@ -100,21 +110,20 @@
      margin-bottom: 3rem;
      justify-content: space-between;
      flex-wrap: wrap;
-     gap: 2rem;
-
+     gap: 1rem;    
      /* max-width: 420px; */
    }
 
   .content .card{
-    min-width: 480px;
-    width: 40%;
+    min-width: 400px;
+    width: 49%;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     transition: transform .4s;
     box-shadow: rgba(0, 0, 0, 0.4) 10px 10px 4px, rgba(0, 0, 0, 0.3) 10px 10px 4px;
-
     align-self: stretch;
+    background: #9C4D40;
   }
 
   .content .card:hover{
@@ -129,7 +138,9 @@
   .content .card_left{
     background: #9C4D40;
     width: 33%;
+    height: 100%;
     display: flex;
+    align-self: stretch;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -137,6 +148,9 @@
     font-style: italic;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
   }
   .content .SRI {
     background: rgba(255, 255, 255, 0.4);
@@ -153,8 +167,8 @@
   
   .content .card_role{
     color: #fff;
-    font-size: 1.2rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 400;
     text-align: center;
   }
   .content .card_right{
@@ -164,7 +178,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-self: center;
+    align-self: stretch;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
   }
   .content .card_right .card_name{
     font-size: 1.5rem;
@@ -178,6 +195,7 @@
     font-size: 0.9rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    padding-bottom: 1rem;
   }
   .content .card_right .card_contact{
     display: flex;
@@ -384,19 +402,10 @@ button:hover {
 
  /* APPLYING MEDIA QUERIES */
  @media (max-width: 1000px) {
-
-  .content .row_card {
-    flex-direction: column;
-    gap: 2rem;
-  }
  
   input[type=checkbox]:checked ~ .menu{
     display: block;
   }
- 
-  input[type=checkbox]:checked ~ .content{
-   margin-top: 40vh;
- }
 
  .menu { 
     margin-top: 10vh;
@@ -431,19 +440,57 @@ button:hover {
   display:none;
  }
 
+ 
+.content{
+  margin-top: 5vh;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.content .text{
+  padding: 0.5rem;
+  width: 100%;
+
+
+}
+.content .text p{
+  font-size: 0.85rem;
+}
+
  .content .highlight h1{
   color: #fff;
   font-size: 4rem;
   font-weight: 600;
   text-align: center;
  }
+ .content .card_row_title{
+   font-size: 3rem;
+ }
 
- .content .highlight p{
-   color: #fff;
-   font-size: 0.7rem;
-   font-weight: 500;
-   text-align: center;
+ .content .text .list_text{
+   font-size: 0.85rem;
+   padding-left: 0.9rem;
+   margin-left: 0px;
+ }
+
+
+.content .row_card {
+  flex-direction: column;
+  gap: 2rem;
 }
+
+.content .card{
+  width: 100%;
+}
+.content .card .card_role{
+  font-size: 0.85rem;
+}
+
+.content .card .card_description{
+  font-size: 0.75rem;
+}
+
+
  }
 
 
